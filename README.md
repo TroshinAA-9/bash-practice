@@ -7,5 +7,6 @@
 
 - `day1/` — файлы и папки: touch, mkdir, cp, mv, rm, cat
 - 'day2/' -grep, find, regular
-- 'day3/' - права дсступа
+- 'day3/' - права доступа
+- 'day4' - процессы(практика, отчет в notes.md)
 - `notes.md` — конспект по дням
