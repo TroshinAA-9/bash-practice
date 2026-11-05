@@ -45,3 +45,21 @@ top - просмотр процессов режиме реального вре
 
 kill - мягкое завершение процесса
 kill -9 жесткое завершение процесса, ядро убивает процесс мгновенно
+
+
+# День 5. Ввод - вывод: >, >>, 2>&1
+
+
+2>&1 — самый важный приём. Читается так: «поток 2 (stderr) перенаправь туда же, куда уже идёт поток 1 (stdout)»
+
+command > file.txt          # stdout в файл (перезаписать)
+command >> file.txt         # stdout в файл (дописать)
+command 2> error.txt        # stderr в файл
+command 2>&1                # stderr туда же, куда stdout
+command > all.txt 2>&1      # и stdout, и stderr в один файл
+command &> all.txt          # то же, короче (bash 4+)
+command > /dev/null         # выбросить stdout (в «чёрную дыру»)
+command 2> /dev/null        # выбросить stderr
+command > /dev/null 2>&1    # выбросить всё
+
+
